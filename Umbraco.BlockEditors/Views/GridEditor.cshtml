@@ -1,0 +1,7 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.GridEditor>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+    Layout = "_Layout.cshtml";
+}
+
+@Html.GetGridHtml(Model, GridEditor.GetModelPropertyType(p => p.Grid).Alias,"bootstrap3-fluid")

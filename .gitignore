@@ -1,0 +1,12 @@
+
+.vs/
+
+packages/
+
+Umbraco.BlockEditors/App_Data/
+
+Umbraco.BlockEditors/obj/
+
+Umbraco.BlockEditors/Properties/
+
+Umbraco.BlockEditors/Umbraco/
