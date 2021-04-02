@@ -1,0 +1,12 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.BlockList>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+    Layout = "_Layout.cshtml";
+    
+}
+
+@foreach (var block in Model.Blocks)
+{
+    @Html.Partial($"Blocks/{block.Content.ContentType.Alias}", block)
+}
+

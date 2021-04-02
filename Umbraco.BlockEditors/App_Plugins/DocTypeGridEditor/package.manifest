@@ -14,7 +14,66 @@
         "viewPath": "/Views/Partials/DocTypeGridEditors/",
         "previewViewPath": "/Views/Partials/DocTypeGridEditors/",
         "previewCssFilePath": "~/css/dtge.css",
-        "previewJsFilePath": ""
+        "previewJsFilePath": "",
+        "showDocTypeSelectAsGrid": true
+
+      }
+    },
+    {
+      "name": "Configuration Steps",
+      "alias": "configurationSteps",
+      "view": "/App_Plugins/DocTypeGridEditor/Views/doctypegrideditor.html",
+      "render": "/App_Plugins/DocTypeGridEditor/Render/DocTypeGridEditor.cshtml",
+      "icon": "icon-item-arrangement",
+      "config": {
+        "allowedDocTypes": [ "elementConfigurationSteps" ],
+        "nameTemplate": "",
+        "enablePreview": true,
+        "overlaySize": "medium",
+        "viewPath": "/Views/Partials/DocTypeGridEditors/",
+        "previewViewPath": "/Views/Partials/DocTypeGridEditors/",
+        "previewCssFilePath": "~/css/dtge.css",
+        "previewJsFilePath": "",
+        "showDocTypeSelectAsGrid": true
+
+      }
+    },
+    {
+      "name": "Hero",
+      "alias": "hero",
+      "view": "/App_Plugins/DocTypeGridEditor/Views/doctypegrideditor.html",
+      "render": "/App_Plugins/DocTypeGridEditor/Render/DocTypeGridEditor.cshtml",
+      "icon": "icon-item-arrangement",
+      "config": {
+        "allowedDocTypes": [ "elementHero" ],
+        "nameTemplate": "",
+        "enablePreview": true,
+        "overlaySize": "medium",
+        "viewPath": "/Views/Partials/DocTypeGridEditors/",
+        "previewViewPath": "/Views/Partials/DocTypeGridEditors/",
+        "previewCssFilePath": "~/css/dtge.css",
+        "previewJsFilePath": "",
+        "showDocTypeSelectAsGrid": true
+
+      }
+    },
+    {
+      "name": "Pods",
+      "alias": "pods",
+      "view": "/App_Plugins/DocTypeGridEditor/Views/doctypegrideditor.html",
+      "render": "/App_Plugins/DocTypeGridEditor/Render/DocTypeGridEditor.cshtml",
+      "icon": "icon-item-arrangement",
+      "config": {
+        "allowedDocTypes": [ "elementPods" ],
+        "nameTemplate": "",
+        "enablePreview": true,
+        "overlaySize": "medium",
+        "viewPath": "/Views/Partials/DocTypeGridEditors/",
+        "previewViewPath": "/Views/Partials/DocTypeGridEditors/",
+        "previewCssFilePath": "~/css/dtge.css",
+        "previewJsFilePath": "",
+        "showDocTypeSelectAsGrid": true
+
       }
     }
   ],

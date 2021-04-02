@@ -1,0 +1,10 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.NestedContentDemo>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "_Layout.cshtml";
+}
+
+@foreach(var widget in Model.Widgets)
+{
+	@Html.Partial($"{widget.ContentType.Alias}", widget)
+}

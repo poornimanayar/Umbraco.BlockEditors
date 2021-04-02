@@ -1,0 +1,36 @@
+﻿@inherits UmbracoViewPage<Umbraco.Core.Models.Blocks.BlockListItem>
+
+@{ var contentModel = Model.Content as ElementConfigurationStepsBlockList;
+
+    <section class="page-section" id="about">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">@contentModel.Heading</h2>
+                <h3 class="section-subheading text-muted">@contentModel.SubHeading</h3>
+            </div>
+            <ul class="timeline">
+                @foreach (var step in contentModel.ConfigurationSteps.Select((ol, i) => new { Step = ol, Index = i + 1 }))
+                {
+                    var iconClass = step.Index % 2 == 0 ? "class=timeline-inverted" : string.Empty;
+                    var stepContent = step.Step.Content as ConfigurationStepBlock;
+    <li @iconClass>
+        <div class="timeline-image"><img class="rounded-circle img-fluid" src="@(string.Format($"~../../../assets/img/steps/N{step.Index}.png"))" alt="" /></div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+                <h4>@stepContent.PreHeading</h4>
+                <h4 class="subheading">@stepContent.Heading</h4>
+            </div>
+            <div class="timeline-body"><p class="text-muted">@stepContent.StepDescription</p></div>
+        </div>
+    </li>
+}
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <h4>
+                            @contentModel.FinishStepText
+                        </h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section> }

@@ -1,0 +1,6 @@
+﻿<button class="customblock" type="button" ng-click="block.edit()">
+    <h2 ng-bind="block.data.preHeading"></h2>
+    <p ng-bind="block.data.heading"></p>
+    <p ng-if="block.settingsData.additionalClasses !=''"><strong>Additional CssClasses:</strong> {{block.settingsData.additionalClasses}}</p>
+    <p ng-if="block.settingsData.additionalClasses ==''">No Additional CssClasses</p>
+</button>

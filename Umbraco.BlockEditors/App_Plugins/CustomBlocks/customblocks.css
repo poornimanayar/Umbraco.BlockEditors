@@ -1,0 +1,18 @@
+﻿.customblock{
+   width:100%;
+   background-color:#fff;
+   text-align:left;
+   border:solid 1px #e9e9eb;
+
+}
+
+    .customblock:hover {
+        background-color: #f9f9fa;
+    }
+
+    .customblock h2 {
+        color: #7030A0;
+    }
+.customblock p{
+    color:black;
+}

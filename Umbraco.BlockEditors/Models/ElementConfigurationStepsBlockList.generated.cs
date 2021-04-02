@@ -19,64 +19,57 @@ using Umbraco.ModelsBuilder.Embedded;
 
 namespace Umbraco.Web.PublishedModels
 {
-	/// <summary>Image</summary>
-	[PublishedModel("Image")]
-	public partial class Image : PublishedContentModel
+	/// <summary>Configuration Steps Block List</summary>
+	[PublishedModel("elementConfigurationStepsBlockList")]
+	public partial class ElementConfigurationStepsBlockList : PublishedElementModel
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.12.2")]
-		public new const string ModelTypeAlias = "Image";
+		public new const string ModelTypeAlias = "elementConfigurationStepsBlockList";
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.12.2")]
-		public new const PublishedItemType ModelItemType = PublishedItemType.Media;
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.12.2")]
 		public new static IPublishedContentType GetModelContentType()
 			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.12.2")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Image, TValue>> selector)
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<ElementConfigurationStepsBlockList, TValue>> selector)
 			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 #pragma warning restore 0109
 
 		// ctor
-		public Image(IPublishedContent content)
+		public ElementConfigurationStepsBlockList(IPublishedElement content)
 			: base(content)
 		{ }
 
 		// properties
 
 		///<summary>
-		/// Size: in bytes
+		/// Configuration Steps
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.12.2")]
-		[ImplementPropertyType("umbracoBytes")]
-		public long UmbracoBytes => this.Value<long>("umbracoBytes");
+		[ImplementPropertyType("configurationSteps")]
+		public global::Umbraco.Core.Models.Blocks.BlockListModel ConfigurationSteps => this.Value<global::Umbraco.Core.Models.Blocks.BlockListModel>("configurationSteps");
 
 		///<summary>
-		/// Type
+		/// Finish Step Text
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.12.2")]
-		[ImplementPropertyType("umbracoExtension")]
-		public string UmbracoExtension => this.Value<string>("umbracoExtension");
+		[ImplementPropertyType("finishStepText")]
+		public string FinishStepText => this.Value<string>("finishStepText");
 
 		///<summary>
-		/// Upload image
+		/// Heading
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.12.2")]
-		[ImplementPropertyType("umbracoFile")]
-		public global::Umbraco.Core.PropertyEditors.ValueConverters.ImageCropperValue UmbracoFile => this.Value<global::Umbraco.Core.PropertyEditors.ValueConverters.ImageCropperValue>("umbracoFile");
+		[ImplementPropertyType("heading")]
+		public string Heading => this.Value<string>("heading");
 
 		///<summary>
-		/// Height: in pixels
+		/// Sub Heading
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.12.2")]
-		[ImplementPropertyType("umbracoHeight")]
-		public int UmbracoHeight => this.Value<int>("umbracoHeight");
-
-		///<summary>
-		/// Width: in pixels
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.12.2")]
-		[ImplementPropertyType("umbracoWidth")]
-		public int UmbracoWidth => this.Value<int>("umbracoWidth");
+		[ImplementPropertyType("subHeading")]
+		public string SubHeading => this.Value<string>("subHeading");
 	}
 }
