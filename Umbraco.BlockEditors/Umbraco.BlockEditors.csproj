@@ -50,6 +50,9 @@
     <Reference Include="AngleSharp.Css, Version=0.14.2.0, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">
       <HintPath>..\packages\AngleSharp.Css.0.14.2\lib\net472\AngleSharp.Css.dll</HintPath>
     </Reference>
+    <Reference Include="Bento.Core, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bento.Core.2.0.1\lib\net45\Bento.Core.dll</HintPath>
+    </Reference>
     <Reference Include="ClientDependency.Core, Version=1.9.9.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ClientDependency.1.9.9\lib\net45\ClientDependency.Core.dll</HintPath>
     </Reference>
@@ -149,6 +152,9 @@
     </Reference>
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Perplex.ContentBlocks, Version=1.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Perplex.ContentBlocks.Core.1.7.0\lib\net472\Perplex.ContentBlocks.dll</HintPath>
     </Reference>
     <Reference Include="Semver, Version=2.0.4.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Semver.2.0.4\lib\net452\Semver.dll</HintPath>
@@ -260,6 +266,9 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Umbraco.Community.Contentment, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Our.Umbraco.Community.Contentment.Core.1.2.1\lib\net472\Umbraco.Community.Contentment.dll</HintPath>
+    </Reference>
     <Reference Include="Umbraco.Core, Version=8.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\UmbracoCms.Core.8.12.2\lib\net472\Umbraco.Core.dll</HintPath>
     </Reference>
@@ -282,6 +291,107 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Plugins\BentoRelationshipManager\relationshipmanager.controller.js" />
+    <Content Include="App_Plugins\BentoRelationshipManager\relationshipmanager.html" />
+    <Content Include="App_Plugins\Bento\bento.convert.controller.js" />
+    <Content Include="App_Plugins\Bento\bento.convert.html" />
+    <Content Include="App_Plugins\Bento\bento.convert.map.controller.js" />
+    <Content Include="App_Plugins\Bento\bento.convert.map.html" />
+    <Content Include="App_Plugins\Bento\bento.create.controller.js" />
+    <Content Include="App_Plugins\Bento\bento.create.html" />
+    <Content Include="App_Plugins\Bento\bento.edit.controller.js" />
+    <Content Include="App_Plugins\Bento\bento.edit.html" />
+    <Content Include="App_Plugins\Bento\bento.editor.controller.js" />
+    <Content Include="App_Plugins\Bento\bento.editor.html" />
+    <Content Include="App_Plugins\Bento\bento.grid.editor.controller.js" />
+    <Content Include="App_Plugins\Bento\bento.grid.editor.html" />
+    <Content Include="App_Plugins\Bento\bento.layouts.editor.controller.js" />
+    <Content Include="App_Plugins\Bento\bento.layouts.editor.html" />
+    <Content Include="App_Plugins\Bento\bento.stack.editor.controller.js" />
+    <Content Include="App_Plugins\Bento\bento.stack.editor.html" />
+    <Content Include="App_Plugins\Bento\bento.stack.settings.editor.controller.js" />
+    <Content Include="App_Plugins\Bento\bento.stack.settings.editor.html" />
+    <Content Include="App_Plugins\Bento\Css\bento.css" />
+    <Content Include="App_Plugins\Bento\Css\bento.min.css" />
+    <Content Include="App_Plugins\Bento\Css\bento.previews.css" />
+    <Content Include="App_Plugins\Bento\Css\bento.previews.min.css" />
+    <Content Include="App_Plugins\Bento\Directives\Components\bentoblockpreview.component.js" />
+    <Content Include="App_Plugins\Bento\Directives\Components\bentoblocksettingspreview.component.js" />
+    <Content Include="App_Plugins\Bento\Directives\Components\blockdoctypegrid.directive.js" />
+    <Content Include="App_Plugins\Bento\Directives\Components\blockpicker.directive.js" />
+    <Content Include="App_Plugins\Bento\Directives\Components\layout.directive.js" />
+    <Content Include="App_Plugins\Bento\Directives\Components\layout.preview.directive.js" />
+    <Content Include="App_Plugins\Bento\Directives\Components\setting.directive.js" />
+    <Content Include="App_Plugins\Bento\Directives\Components\setting.edit.directive.js" />
+    <Content Include="App_Plugins\Bento\Lang\en-US.xml" />
+    <Content Include="App_Plugins\Bento\PreValueEditors\bento.credits.controller.js" />
+    <Content Include="App_Plugins\Bento\PreValueEditors\bento.credits.html" />
+    <Content Include="App_Plugins\Bento\PreValueEditors\bentolayout.edit.controller.js" />
+    <Content Include="App_Plugins\Bento\PreValueEditors\bentolayout.edit.html" />
+    <Content Include="App_Plugins\Bento\PreValueEditors\bentolayout.editor.controller.js" />
+    <Content Include="App_Plugins\Bento\PreValueEditors\bentolayout.editor.html" />
+    <Content Include="App_Plugins\Bento\PreValueEditors\bentolayoutarea.edit.controller.js" />
+    <Content Include="App_Plugins\Bento\PreValueEditors\bentolayoutarea.edit.html" />
+    <Content Include="App_Plugins\Bento\PreValueEditors\bentoprevalue.edit.controller.js" />
+    <Content Include="App_Plugins\Bento\PreValueEditors\bentoprevalue.edit.html" />
+    <Content Include="App_Plugins\Bento\PreValueEditors\bentosetting.edit.controller.js" />
+    <Content Include="App_Plugins\Bento\PreValueEditors\bentosetting.edit.html" />
+    <Content Include="App_Plugins\Bento\PreValueEditors\bentosettings.editor.controller.js" />
+    <Content Include="App_Plugins\Bento\PreValueEditors\bentosettings.editor.html" />
+    <Content Include="App_Plugins\Bento\PreValueEditors\contenttypepicker.controller.js" />
+    <Content Include="App_Plugins\Bento\PreValueEditors\jscodeeditor.controller.js" />
+    <Content Include="App_Plugins\Bento\PreValueEditors\prevalueUmbEditor.controller.js" />
+    <Content Include="App_Plugins\Bento\PreValueEditors\singlecontenttypepicker.controller.js" />
+    <Content Include="App_Plugins\Bento\PreValueEditors\singlecssfilepicker.controller.js" />
+    <Content Include="App_Plugins\Bento\PreValueEditors\singlejsfilepicker.controller.js" />
+    <Content Include="App_Plugins\Bento\Resources\bento.resource.js" />
+    <Content Include="App_Plugins\Bento\Resources\bento.setting.factory.js" />
+    <Content Include="App_Plugins\Bento\Views\Components\bento-block-doc-type-grid.html" />
+    <Content Include="App_Plugins\Bento\Views\Components\bento-block-picker.html" />
+    <Content Include="App_Plugins\Bento\Views\Components\bento-layout-preview.html" />
+    <Content Include="App_Plugins\Bento\Views\Components\bento-layout.html" />
+    <Content Include="App_Plugins\Bento\Views\Components\bento-setting-edit.html" />
+    <Content Include="App_Plugins\Bento\Views\Components\bento-setting.html" />
+    <Content Include="App_Plugins\Bento\Views\PreValueEditors\contenttypepicker.html" />
+    <Content Include="App_Plugins\Bento\Views\PreValueEditors\jscodeeditor.html" />
+    <Content Include="App_Plugins\Bento\Views\PreValueEditors\prevalue-umb-editor.html" />
+    <Content Include="App_Plugins\Bento\Views\PreValueEditors\singlecontenttypepicker.html" />
+    <Content Include="App_Plugins\Bento\Views\PreValueEditors\singlecssfilepicker.html" />
+    <Content Include="App_Plugins\Bento\Views\PreValueEditors\singlejsfilepicker.html" />
+    <Content Include="App_Plugins\Bento\Views\PreValueEditors\singlerequiredcontenttypepicker.html" />
+    <Content Include="App_Plugins\Contentment\backoffice\contentment\index.html" />
+    <Content Include="App_Plugins\Contentment\components\list-editor.html" />
+    <Content Include="App_Plugins\Contentment\components\stack-editor.html" />
+    <Content Include="App_Plugins\Contentment\contentment.css" />
+    <Content Include="App_Plugins\Contentment\contentment.js" />
+    <Content Include="App_Plugins\Contentment\editors\cascading-dropdown-list.html" />
+    <Content Include="App_Plugins\Contentment\editors\checkbox-list.html" />
+    <Content Include="App_Plugins\Contentment\editors\code-editor.html" />
+    <Content Include="App_Plugins\Contentment\editors\configuration-editor.html" />
+    <Content Include="App_Plugins\Contentment\editors\configuration-editor.overlay.html" />
+    <Content Include="App_Plugins\Contentment\editors\content-blocks.blueprint.html" />
+    <Content Include="App_Plugins\Contentment\editors\content-blocks.html" />
+    <Content Include="App_Plugins\Contentment\editors\content-blocks.overlay.html" />
+    <Content Include="App_Plugins\Contentment\editors\content-list.html" />
+    <Content Include="App_Plugins\Contentment\editors\content-source.html" />
+    <Content Include="App_Plugins\Contentment\editors\data-table.html" />
+    <Content Include="App_Plugins\Contentment\editors\dropdown-list.html" />
+    <Content Include="App_Plugins\Contentment\editors\icon-picker.html" />
+    <Content Include="App_Plugins\Contentment\editors\item-picker.html" />
+    <Content Include="App_Plugins\Contentment\editors\item-picker.overlay.html" />
+    <Content Include="App_Plugins\Contentment\editors\macro-picker.html" />
+    <Content Include="App_Plugins\Contentment\editors\notes.html" />
+    <Content Include="App_Plugins\Contentment\editors\number-input.html" />
+    <Content Include="App_Plugins\Contentment\editors\radio-button-list.html" />
+    <Content Include="App_Plugins\Contentment\editors\readonly-node-preview.html" />
+    <Content Include="App_Plugins\Contentment\editors\render-macro.html" />
+    <Content Include="App_Plugins\Contentment\editors\templated-list.html" />
+    <Content Include="App_Plugins\Contentment\editors\text-input.html" />
+    <Content Include="App_Plugins\Contentment\editors\_empty.html" />
+    <Content Include="App_Plugins\Contentment\editors\_json-editor.html" />
+    <Content Include="App_Plugins\Contentment\lang\da.xml" />
+    <Content Include="App_Plugins\Contentment\lang\en.xml" />
+    <Content Include="App_Plugins\Contentment\lang\pt-br.xml" />
     <Content Include="App_Plugins\CustomBlocks\customblocks.css" />
     <Content Include="App_Plugins\CustomBlocks\Hero.html" />
     <Content Include="App_Plugins\DocTypeGridEditor\Css\doctypegrideditor.css" />
@@ -294,6 +404,29 @@
     <Content Include="App_Plugins\DocTypeGridEditor\Lang\en-US.xml" />
     <Content Include="App_Plugins\DocTypeGridEditor\Views\doctypegrideditor.dialog.html" />
     <Content Include="App_Plugins\DocTypeGridEditor\Views\doctypegrideditor.html" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\assets\icons.svg" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\components\perplex.content-block.component.html" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\components\perplex.content-block.component.js" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\components\perplex.content-blocks.icon.js" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\configuration\perplex.content-blocks.configuration.structure.html" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\configuration\perplex.content-blocks.configuration.structure.js" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\lang\da-DK.xml" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\lang\en-US.xml" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\lang\nl-NL.xml" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\lib\angular-slick.js" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\lib\slick.min.js" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\perplex.content-blocks.api.js" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\perplex.content-blocks.controller.js" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\perplex.content-blocks.css" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\perplex.content-blocks.html" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\perplex.content-blocks.requires.js" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\utils\perplex.content-blocks.copy-paste-service.js" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\utils\perplex.content-blocks.utils.js" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\utils\property\perplex.content-blocks.property-scaffold-cache.js" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\utils\property\perplex.content-blocks.property.html" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\utils\property\perplex.content-blocks.property.js" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\utils\tab-focus\perplex.content-blocks.tab-focus-once.directive.js" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\utils\tab-focus\perplex.content-blocks.tab-focus.service.js" />
     <Content Include="assets\img\about\1.jpg" />
     <Content Include="assets\img\about\2.jpg" />
     <Content Include="assets\img\about\3.jpg" />
@@ -301,12 +434,15 @@
     <Content Include="assets\img\close-icon.svg" />
     <Content Include="assets\img\favicon.ico" />
     <Content Include="assets\img\header-bg.jpg" />
+    <Content Include="assets\img\hero.png" />
+    <Content Include="assets\img\layout2.png" />
     <Content Include="assets\img\logos\creative-market.jpg" />
     <Content Include="assets\img\logos\designmodo.jpg" />
     <Content Include="assets\img\logos\envato.jpg" />
     <Content Include="assets\img\logos\themeforest.jpg" />
     <Content Include="assets\img\map-image.png" />
     <Content Include="assets\img\navbar-logo.svg" />
+    <Content Include="assets\img\pods.png" />
     <Content Include="assets\img\portfolio\01-full.jpg" />
     <Content Include="assets\img\portfolio\01-thumbnail.jpg" />
     <Content Include="assets\img\portfolio\02-full.jpg" />
@@ -319,6 +455,7 @@
     <Content Include="assets\img\portfolio\05-thumbnail.jpg" />
     <Content Include="assets\img\portfolio\06-full.jpg" />
     <Content Include="assets\img\portfolio\06-thumbnail.jpg" />
+    <Content Include="assets\img\steps.png" />
     <Content Include="assets\img\team\1.jpg" />
     <Content Include="assets\img\team\2.jpg" />
     <Content Include="assets\img\team\3.jpg" />
@@ -353,7 +490,14 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Bento.generated.cs" />
+    <Compile Include="Models\BentoBlockSettings.generated.cs" />
+    <Compile Include="Models\BentoConfigurationSteps.generated.cs" />
+    <Compile Include="Models\BentoEditor.generated.cs" />
+    <Compile Include="Models\BentoHero.generated.cs" />
+    <Compile Include="Models\BentoItem.generated.cs" />
+    <Compile Include="Models\BentoPods.generated.cs" />
+    <Compile Include="PerplexContentBlocks\DemoContentBlockCategorySetUpComponent.cs" />
+    <Compile Include="PerplexContentBlocks\PerplexContentBlocksComponent.cs" />
     <Compile Include="Models\BlockList.generated.cs" />
     <Compile Include="Models\BlockSettings.generated.cs" />
     <Compile Include="Models\ConfigurationStepBlock.generated.cs" />
@@ -390,6 +534,26 @@
     <Content Include="config\serilog.config" />
     <Content Include="config\HealthChecks.config" />
     <Content Include="config\BackOfficeTours\getting-started.json" />
+    <Content Include="App_Plugins\Contentment\render\ContentBlockPreview.cshtml" />
+    <Content Include="App_Plugins\Contentment\package.manifest" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\utils\tab-focus\package.manifest" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\utils\property\package.manifest" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\utils\package.manifest" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\package.manifest" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\lib\package.manifest" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\configuration\package.manifest" />
+    <Content Include="App_Plugins\Perplex.ContentBlocks\components\package.manifest" />
+    <Content Include="App_Plugins\Bento\package.manifest" />
+    <Content Include="App_Plugins\Bento\Css\bento.stack.scss" />
+    <Content Include="App_Plugins\Bento\Css\bento.scss" />
+    <Content Include="App_Plugins\Bento\Css\bento.previews.scss" />
+    <Content Include="App_Plugins\Bento\Css\bento.picker.scss" />
+    <Content Include="App_Plugins\Bento\Css\bento.layout.scss" />
+    <Content Include="App_Plugins\Bento\Css\bento.item.scss" />
+    <Content Include="App_Plugins\Bento\Css\bento.doctypepicker.scss" />
+    <Content Include="App_Plugins\Bento\bento-settings-schema.json" />
+    <Content Include="App_Plugins\Bento\bento-layouts-schema.json" />
+    <Content Include="App_Plugins\BentoRelationshipManager\package.manifest" />
     <None Include="packages.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\GridEditor.cshtml" />
@@ -400,15 +564,11 @@
     <Content Include="Views\Partials\DocTypeGridEditors\ElementConfigurationSteps.cshtml" />
     <Content Include="Views\Bento.cshtml" />
     <Content Include="Views\BlockList.cshtml" />
-    <Content Include="Views\Contentful.cshtml" />
     <Content Include="Views\NestedContent.cshtml" />
     <Content Include="Views\PerplexContentBlocks.cshtml" />
-    <Content Include="Views\Partials\ElementConfigurationSteps.cshtml" />
-    <Content Include="Views\Partials\ElementHero.cshtml" />
-    <Content Include="Views\Partials\ElementPods.cshtml" />
-    <Content Include="Views\Partials\Blocks\ElementConfigurationStepsBlockList.cshtml" />
-    <Content Include="Views\Partials\Blocks\ElementHero.cshtml" />
-    <Content Include="Views\Partials\Blocks\ElementPodsBlockList.cshtml" />
+    <Content Include="Views\Partials\BlockListPartials\ElementConfigurationStepsBlockList.cshtml" />
+    <Content Include="Views\Partials\BlockListPartials\ElementHero.cshtml" />
+    <Content Include="Views\Partials\BlockListPartials\ElementPodsBlockList.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Media.cshtml" />
@@ -418,6 +578,30 @@
     <Content Include="Views\Partials\Grid\Bootstrap3.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
     <Content Include="Views\Partials\BlockList\Default.cshtml" />
+    <Content Include="Views\Contentment.cshtml" />
+    <Content Include="Views\Partials\ContentmentContentBlocks\ElementConfigurationSteps.cshtml" />
+    <Content Include="Views\Partials\ContentmentContentBlocks\ElementHero.cshtml" />
+    <Content Include="Views\Partials\ContentmentContentBlocks\ElementPods.cshtml" />
+    <Content Include="Views\Partials\Blocks\ElementConfigurationSteps.cshtml" />
+    <Content Include="Views\Partials\Blocks\ElementHero.cshtml" />
+    <Content Include="Views\Partials\Blocks\ElementPods.cshtml" />
+    <Content Include="Views\Partials\DocTypeGridEditors\Preview\ElementHero.cshtml" />
+    <Content Include="Views\Partials\DocTypeGridEditors\Preview\ElementConfigurationSteps.cshtml" />
+    <Content Include="Views\Partials\DocTypeGridEditors\Preview\ElementPods.cshtml" />
+    <Content Include="Views\Partials\PerplexContentBlocks\Hero\Layout1.cshtml" />
+    <Content Include="Views\Partials\PerplexContentBlocks\Hero\Layout2.cshtml" />
+    <Content Include="Views\Partials\PerplexContentBlocks\Steps\Steps.cshtml" />
+    <Content Include="Views\Partials\PerplexContentBlocks\Pods\Pods.cshtml" />
+    <Content Include="Views\Partials\NestedContent\ElementConfigurationSteps.cshtml" />
+    <Content Include="Views\Partials\NestedContent\ElementHero.cshtml" />
+    <Content Include="Views\Partials\NestedContent\ElementPods.cshtml" />
+    <Content Include="Views\Partials\Bento\BentoConfigurationSteps.cshtml" />
+    <Content Include="Views\Partials\Bento\BentoConfigurationStepsBackOffice.cshtml" />
+    <Content Include="Views\Partials\Bento\BentoHero.cshtml" />
+    <Content Include="Views\Partials\Bento\BentoHeroBackOffice.cshtml" />
+    <Content Include="Views\Partials\Bento\BentoPods.cshtml" />
+    <Content Include="Views\Partials\Bento\BentoPodsBackOffice.cshtml" />
+    <Content Include="Views\Partials\Bento\Layouts\default.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

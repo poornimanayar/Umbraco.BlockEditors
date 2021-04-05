@@ -1,0 +1,6 @@
+Failed to build Live models.
+Cannot generate model for type 'bentoHero' because it is an element type, but it is composed of 'bentoItem' which is not.
+
+   at Umbraco.ModelsBuilder.Embedded.Building.Builder.Prepare() in D:\a\1\s\src\Umbraco.ModelsBuilder.Embedded\Building\Builder.cs:line 180
+   at Umbraco.ModelsBuilder.Embedded.Building.ModelsGenerator.GenerateModels() in D:\a\1\s\src\Umbraco.ModelsBuilder.Embedded\Building\ModelsGenerator.cs:line 30
+   at Umbraco.ModelsBuilder.Embedded.LiveModelsProvider.GenerateModelsIfRequested(Object sender, EventArgs args) in D:\a\1\s\src\Umbraco.ModelsBuilder.Embedded\LiveModelsProvider.cs:line 84

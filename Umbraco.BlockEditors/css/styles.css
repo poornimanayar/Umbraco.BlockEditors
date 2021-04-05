@@ -3894,11 +3894,12 @@ input[type=button].btn-block {
 .nav-tabs .nav-item {
   margin-bottom: -1px;
 }
-.nav-tabs .nav-link {
-  border: 1px solid transparent;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-}
+    .nav-tabs .nav-link {
+        border: 1px solid transparent;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+       
+    }
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
   border-color: #e9ecef #e9ecef #dee2e6;
 }
@@ -10069,12 +10070,13 @@ img::-moz-selection {
 #mainNav .navbar-brand img {
   height: 1.5rem;
 }
-#mainNav .navbar-nav .nav-item .nav-link {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.95rem;
-  color: #fff;
-  letter-spacing: 0.0625em;
-}
+    #mainNav .navbar-nav .nav-item .nav-link {
+        font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 0.95rem;
+        color: #fff;
+        letter-spacing: 0.0625em;
+        color: #fed136
+    }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #fed136;
 }

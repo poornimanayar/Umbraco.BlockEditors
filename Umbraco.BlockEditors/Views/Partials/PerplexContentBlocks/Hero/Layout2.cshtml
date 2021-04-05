@@ -1,0 +1,10 @@
+﻿@using Perplex.ContentBlocks.Rendering;
+@model IContentBlockViewModel<ElementHero>
+
+<header class="masthead" style="background-image:url('@Model.Content.Image.Url')">
+    <div class="container">
+        <div class="masthead-subheading" style="text-align:left">@Model.Content.PreHeading</div>
+        <div class="masthead-heading text-uppercase" style="text-align:left;width:50%;">@Model.Content.Heading</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" style="float:left" target="@Model.Content.CallToActionLink.Target" href="@Model.Content.CallToActionLink.Url">@Model.Content.CallToActionLink.Name</a>
+    </div>
+</header>

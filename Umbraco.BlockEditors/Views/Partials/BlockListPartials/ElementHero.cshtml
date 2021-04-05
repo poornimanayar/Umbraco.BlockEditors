@@ -1,0 +1,15 @@
+﻿@inherits UmbracoViewPage<Umbraco.Core.Models.Blocks.BlockListItem>
+
+@{
+    var contentModel = Model.Content as ElementHero;
+    var settingsModel = Model.Settings as BlockSettings;
+
+    <header class="masthead @settingsModel.AdditionalClasses" style="background-image:url('@contentModel.Image.Url()')">
+        <div class="container">
+            <div class="masthead-subheading">@contentModel.PreHeading</div>
+            <div class="masthead-heading text-uppercase">@contentModel.Heading</div>
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" target="@contentModel.CallToActionLink.Target" href="@contentModel.CallToActionLink.Url">@contentModel.CallToActionLink.Name</a>
+        </div>
+    </header>
+
+}

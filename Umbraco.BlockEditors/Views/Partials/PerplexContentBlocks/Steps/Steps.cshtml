@@ -1,0 +1,34 @@
+﻿@using Perplex.ContentBlocks.Rendering;
+@model IContentBlockViewModel<ElementConfigurationSteps>
+
+<section class="page-section" id="about">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">@Model.Content.Heading</h2>
+            <h3 class="section-subheading text-muted">@Model.Content.SubHeading</h3>
+        </div>
+        <ul class="timeline">
+            @foreach (var step in Model.Content.ConfigurationSteps.Select((ol, i) => new { Step = ol, Index = i + 1 }))
+            {
+                var iconClass = step.Index % 2 == 0 ? "class=timeline-inverted" : string.Empty;
+                <li @iconClass>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="@(string.Format($"~../../../assets/img/steps/N{step.Index}.png"))" alt="" /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>@step.Step.PreHeading</h4>
+                            <h4 class="subheading">@step.Step.Heading</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">@step.Step.StepDescription</p></div>
+                    </div>
+                </li>
+}
+            <li class="timeline-inverted">
+                <div class="timeline-image">
+                    <h4>
+                        @Model.Content.FinishStepText
+                    </h4>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>

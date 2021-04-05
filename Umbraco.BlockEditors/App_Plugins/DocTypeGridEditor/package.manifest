@@ -12,7 +12,7 @@
         "enablePreview": true,
         "overlaySize": "medium",
         "viewPath": "/Views/Partials/DocTypeGridEditors/",
-        "previewViewPath": "/Views/Partials/DocTypeGridEditors/",
+        "previewViewPath": "/Views/Partials/DocTypeGridEditors/Preview",
         "previewCssFilePath": "~/css/dtge.css",
         "previewJsFilePath": "",
         "showDocTypeSelectAsGrid": true

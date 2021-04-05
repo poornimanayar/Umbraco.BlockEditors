@@ -7,6 +7,6 @@
 
 @foreach (var block in Model.Blocks)
 {
-    @Html.Partial($"Blocks/{block.Content.ContentType.Alias}", block)
+    @Html.Partial($"BlockListPartials/{block.Content.ContentType.Alias}", block)
 }
 

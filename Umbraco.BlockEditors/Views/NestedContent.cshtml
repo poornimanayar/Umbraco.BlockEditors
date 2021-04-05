@@ -6,5 +6,5 @@
 
 @foreach(var widget in Model.Widgets)
 {
-	@Html.Partial($"{widget.ContentType.Alias}", widget)
+	@Html.Partial($"NestedContent/{widget.ContentType.Alias}", widget)
 }
