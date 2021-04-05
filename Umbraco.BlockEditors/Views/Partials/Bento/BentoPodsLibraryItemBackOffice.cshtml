@@ -1,0 +1,16 @@
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<BentoPodsLibraryItem>
+
+<div class="row-fluid">
+    <div class="text-center">
+        <h2 class="section-heading text-uppercase">@Model.Heading</h2>
+        <h3 class="section-subheading text-muted">@Model.SubHeading</h3>
+    </div>
+    <div class="umb-content-grid umb-outline -light">
+        @foreach (var pod in Model.Blocks)
+        {
+<div class="umb-content-grid__item umb-outline umb-outline--surrounding">
+    <h4 class="my-3">@pod.Heading</h4>
+    <p class="text-muted">@pod.Text</p>
+</div>      }
+    </div>
+</div>

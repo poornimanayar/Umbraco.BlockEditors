@@ -492,10 +492,18 @@
   <ItemGroup>
     <Compile Include="Models\BentoBlockSettings.generated.cs" />
     <Compile Include="Models\BentoConfigurationSteps.generated.cs" />
+    <Compile Include="Models\BentoConfigurationStepsComposition.generated.cs" />
+    <Compile Include="Models\BentoConfigurationStepsLibraryItem.generated.cs" />
     <Compile Include="Models\BentoEditor.generated.cs" />
     <Compile Include="Models\BentoHero.generated.cs" />
+    <Compile Include="Models\BentoHeroComposition.generated.cs" />
+    <Compile Include="Models\BentoHeroLibraryItem.generated.cs" />
     <Compile Include="Models\BentoItem.generated.cs" />
+    <Compile Include="Models\BentoItemTypeFolder.generated.cs" />
+    <Compile Include="Models\BentoLibrary.generated.cs" />
     <Compile Include="Models\BentoPods.generated.cs" />
+    <Compile Include="Models\BentoPodsComposition.generated.cs" />
+    <Compile Include="Models\BentoPodsLibraryItem.generated.cs" />
     <Compile Include="PerplexContentBlocks\DemoContentBlockCategorySetUpComponent.cs" />
     <Compile Include="PerplexContentBlocks\PerplexContentBlocksComponent.cs" />
     <Compile Include="Models\BlockList.generated.cs" />
@@ -602,6 +610,12 @@
     <Content Include="Views\Partials\Bento\BentoPods.cshtml" />
     <Content Include="Views\Partials\Bento\BentoPodsBackOffice.cshtml" />
     <Content Include="Views\Partials\Bento\Layouts\default.cshtml" />
+    <Content Include="Views\Partials\Bento\BentoConfigurationStepsLibraryItem.cshtml" />
+    <Content Include="Views\Partials\Bento\BentoConfigurationStepsLibraryItemBackOffice.cshtml" />
+    <Content Include="Views\Partials\Bento\BentoHeroLibraryItem.cshtml" />
+    <Content Include="Views\Partials\Bento\BentoHeroLibraryItemBackOffice.cshtml" />
+    <Content Include="Views\Partials\Bento\BentoPodsLibraryItem.cshtml" />
+    <Content Include="Views\Partials\Bento\BentoPodsLibraryItemBackOffice.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
