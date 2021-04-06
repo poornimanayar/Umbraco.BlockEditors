@@ -3,7 +3,12 @@
 
 packages/
 
-Umbraco.BlockEditors/App_Data/
+Umbraco.BlockEditors/App_Data/cache/
+Umbraco.BlockEditors/App_Data/Logs/
+Umbraco.BlockEditors/App_Data/Models/
+Umbraco.BlockEditors/App_Data/cache/
+Umbraco.BlockEditors/App_Data/packages/
+Umbraco.BlockEditors/App_Data/TEMP/
 
 Umbraco.BlockEditors/obj/
 
