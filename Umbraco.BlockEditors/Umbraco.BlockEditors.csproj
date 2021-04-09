@@ -482,7 +482,7 @@
     <Content Include="config\Lang\sv-SE.user.xml" />
     <Content Include="config\Lang\zh-CN.user.xml" />
     <Content Include="config\logviewer.searches.config.js" />
-    <Content Include="css\dtge.css" />
+    <Content Include="css\preview.css" />
     <Content Include="css\extra.css" />
     <Content Include="css\styles.css" />
     <Content Include="Global.asax" />

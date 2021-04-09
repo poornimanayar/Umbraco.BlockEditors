@@ -9,8 +9,9 @@
         background-color: #f9f9fa;
     }
 
-    .customblock h3 {
+    .customblock h2 {
         color: #7030A0;
+        font-size:1.5em;
     }
 
     .customblock p {

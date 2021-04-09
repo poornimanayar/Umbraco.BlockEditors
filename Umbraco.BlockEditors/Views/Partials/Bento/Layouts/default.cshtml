@@ -1,5 +1,6 @@
 ﻿﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<Bento.Core.Models.StackItem>
 
+
 @foreach (var area in Model.Areas.Where(x => x.Content != null))
 {
     @Html.Partial($"~/Views/Partials/Bento/{area.Content.ContentType.Alias}.cshtml", area.Content)
