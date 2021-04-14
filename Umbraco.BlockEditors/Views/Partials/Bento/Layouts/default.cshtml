@@ -1,7 +1,11 @@
 ﻿﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<Bento.Core.Models.StackItem>
-
-
-@foreach (var area in Model.Areas.Where(x => x.Content != null))
-{
-    @Html.Partial($"~/Views/Partials/Bento/{area.Content.ContentType.Alias}.cshtml", area.Content)
+@{ 
+    var settings = Model.Settings as BentoBlockSettings;
+    var cssClass  = settings.AdditionalClasses != null && settings.AdditionalClasses.IsNullOrWhiteSpace() ? string.Empty : settings.AdditionalClasses;
 }
+<div class="@cssClass">
+    @foreach (var area in Model.Areas.Where(x => x.Content != null))
+    {
+        @Html.Partial($"~/Views/Partials/Bento/{area.Content.ContentType.Alias}.cshtml", area.Content)
+    }
+</div>

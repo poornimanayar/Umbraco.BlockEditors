@@ -7,9 +7,9 @@
       "render": "/App_Plugins/DocTypeGridEditor/Render/DocTypeGridEditor.cshtml",
       "icon": "icon-item-arrangement",
       "config": {
-        "allowedDocTypes": [ "element" ],
+        "allowedDocTypes": [ "elementConfigurationSteps$", "elementHero$", "elementPods$" ],
         "nameTemplate": "",
-        "enablePreview": true,
+        "enablePreview": false,
         "overlaySize": "medium",
         "viewPath": "/Views/Partials/DocTypeGridEditors/",
         "previewViewPath": "/Views/Partials/DocTypeGridEditors/Preview/",

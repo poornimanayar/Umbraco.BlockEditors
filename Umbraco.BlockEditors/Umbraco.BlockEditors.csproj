@@ -499,6 +499,7 @@
     <Compile Include="Models\BentoHeroComposition.generated.cs" />
     <Compile Include="Models\BentoHeroLibraryItem.generated.cs" />
     <Compile Include="Models\BentoItem.generated.cs" />
+    <Compile Include="Models\BentoItemSettings.generated.cs" />
     <Compile Include="Models\BentoItemTypeFolder.generated.cs" />
     <Compile Include="Models\BentoLibrary.generated.cs" />
     <Compile Include="Models\BentoPods.generated.cs" />
