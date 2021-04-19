@@ -31,7 +31,7 @@ namespace Umbraco.BlockEditors.Components
             {
                 Name = "Hero Content Block", //name of the block
                 Id = Guid.Parse("b1f44c8a-8f66-475e-bdd3-21b3a48c157e"),//unique id, create your own guid
-                DataTypeKey = Guid.Parse("b9f44c8a-8f66-475e-bdd3-21b3a48c157e"), //datatype key for content block that was created
+                DataTypeKey = Guid.Parse("b9f44c8a-8f66-475e-bdd3-21b3a48c157e"), //datatype key for nested content data type created for the block
                 PreviewImage = "/assets/img/hero.png", // Image that shows in the UI as a preview of this block. Relative path from the root of your site to an image.
                 Description = "Hero Content Block", //Description of this Content Block
                 CategoryIds = new[] //List of ids of the categories this Content Block should appear in. This references the id of a IContentBlockCategory
@@ -68,7 +68,7 @@ namespace Umbraco.BlockEditors.Components
             {
                 Name = "Pods Block", //name of the block
                 Id = Guid.Parse("b4f44c8a-8f66-475e-bdd3-21b3a48c157e"),//unique id
-                DataTypeKey = Guid.Parse("d0bf8fe5-7cef-42e8-a8d6-a1af88569679"), //datatype key for content block that was created
+                DataTypeKey = Guid.Parse("d0bf8fe5-7cef-42e8-a8d6-a1af88569679"), //datatype key for nested content data type created for the block
                 PreviewImage = "/assets/img/pods.png", // Image that shows in the UI as a preview of this block. Relative path from the root of your site to an image.
                 Description = "Pods Content Block", //Description of this Content Block
                 CategoryIds = new[] //List of ids of the categories this Content Block should appear in. This references the id of a IContentBlockCategory. See Content Block Categories for more details on categories.
@@ -96,7 +96,7 @@ namespace Umbraco.BlockEditors.Components
             {
                 Name = "Configuration Steps Block", //name of the block
                 Id = Guid.Parse("b6f44c8a-8f66-475e-bdd3-21b3a48c157e"),//unique id
-                DataTypeKey = Guid.Parse("7d242d00-e42c-467f-a5d5-dd1d8b75e356"), //datatype key for content block that was created
+                DataTypeKey = Guid.Parse("7d242d00-e42c-467f-a5d5-dd1d8b75e356"), //datatype key for nested content data type created for the block
                 PreviewImage = "/assets/img/steps.png", // Image that shows in the UI as a preview of this block. Relative path from the root of your site to an image.
                 Description = "Configuration Steps Content Block", //Description of this Content Block
                 CategoryIds = new[] //List of ids of the categories this Content Block should appear in. This references the id of a IContentBlockCategory. See Content Block Categories for more details on categories.
